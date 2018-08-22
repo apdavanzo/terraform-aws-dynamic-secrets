@@ -3,8 +3,10 @@ variable "aws_secret_key" { }
 variable "name"           { default = "dynamic-aws-creds-producer" }
 
 terraform {
-  backend "local" {
-    path = "terraform.tfstate"
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "terraform-technical-marketing-demo"
+    }
   }
 }
 
