@@ -8,7 +8,6 @@ terraform {
     organization = "terraform-technical-marketing-demo"
     }
   }
-}
 
 provider "vault" {}
 
